@@ -1,0 +1,54 @@
+<div class="row">
+  <mat-form-field class="col-sm-3">
+    <input matInput type="text" (keyup)="doFilter($event)" placeholder="Filter">
+  </mat-form-field>
+</div>
+
+<table mat-table matSort [dataSource]="dataSource" class="matTable mat-elevation-z8">
+
+  <ng-container matColumnDef="projektart">
+    <th mat-header-cell mat-sort-header *matHeaderCellDef> Projektart </th>
+    <td mat-cell *matCellDef="let antrag"> {{antrag.projektart}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="system">
+    <th mat-header-cell mat-sort-header *matHeaderCellDef> System </th>
+    <td mat-cell *matCellDef="let antrag"> {{antrag.system}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="projekttitel">
+    <th mat-header-cell mat-sort-header *matHeaderCellDef> Projekttitel </th>
+    <td mat-cell *matCellDef="let antrag"> {{antrag.projekttitel}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="projektstatus">
+    <th mat-header-cell mat-sort-header *matHeaderCellDef> Projektstatus </th>
+    <td mat-cell *matCellDef="let antrag"> {{antrag.projektstatus}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="projektdauer">
+    <th mat-header-cell mat-sort-header *matHeaderCellDef> Projektdauer(h) </th>
+    <td mat-cell *matCellDef="let antrag"> {{antrag.projektdauer}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="details">
+    <th mat-header-cell *matHeaderCellDef> Details </th>
+    <td mat-cell *matCellDef="let antrag">
+      <button mat-icon-button color="primary" (click)="redirectToDetails(antrag.id)">
+        <mat-icon style="color: red" class="mat-18">reorder</mat-icon>
+      </button>
+    </td>
+  </ng-container>
+
+  <ng-container matColumnDef="delete">
+    <th mat-header-cell *matHeaderCellDef> Löschen </th>
+    <td mat-cell *matCellDef="let antrag">
+      <button mat-icon-button color="primary" (click)="deleteAntrag(antrag.id)">
+        <mat-icon style="color: red" class="mat-18">delete_outline</mat-icon>
+      </button>
+    </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>

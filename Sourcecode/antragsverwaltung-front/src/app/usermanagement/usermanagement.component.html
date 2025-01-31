@@ -1,0 +1,59 @@
+<div [formGroup]="userForm" class="paddingTop">
+  <div formArrayName="user" *ngFor="let usergroup of userForm.get('user')['controls']; let j = index">
+    <hr *ngIf="j > 0">
+    <div [formGroupName]="j" class="row">
+
+      <mat-form-field class="col-sm-3" appearance="outline">
+        <mat-label>Username</mat-label>
+        <input matInput formControlName="username" placeholder="Benutzernamen">
+      </mat-form-field>
+
+      <mat-form-field class="col-sm-3" appearance="outline">
+        <mat-label>Passwort</mat-label>
+        <input type="password" formControlName="password" matInput placeholder="Passwort">
+      </mat-form-field>
+
+      <mat-form-field class="col-sm-3" appearance="outline">
+        <mat-label>Role</mat-label>
+        <mat-select formControlName="role">
+          <mat-option *ngFor="let option of roleSelect" [value]="option.value">
+            {{option.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <div class="col-sm-1" *ngIf="userForm.get('user')['controls'].length > 0">
+        <button mat-button type="button" (click)="removeusergroup(j, usergroup)">
+          <svg width="48" height="48" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <title>
+              system-remove-large
+            </title>
+            <path
+              d="M29,23.5 L18,23.5 M23.5,45.5 C35.6502645,45.5 45.5,35.6502645 45.5,23.5 C45.5,11.3497355 35.6502645,1.5 23.5,1.5 C11.3497355,1.5 1.5,11.3497355 1.5,23.5 C1.5,35.6502645 11.3497355,45.5 23.5,45.5 Z"
+              stroke="currentColor" stroke-width="1" fill="none" fill-rule="evenodd"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="col-sm-1" *ngIf="userForm.get('user')['controls'][j].touched">
+        <button mat-button type="button" (click)="saveChanges(j)">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path
+              d="M17 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V7l-4-4zm-5 16c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-10H5V5h10v4z"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-3">
+      <button mat-raised-button type="button" color="primary"
+              [disabled]="this.userForm.get('user').invalid"
+              (click)="addUsergroup()">
+        Neuen Nutzer hinzufügen
+      </button>
+    </div>
+  </div>
+</div>

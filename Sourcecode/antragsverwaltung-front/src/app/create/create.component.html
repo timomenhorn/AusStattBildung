@@ -1,0 +1,94 @@
+<div class="paddingTop" [formGroup]="antragForm">
+  <div class="row">
+    <div class="col-sm-6">
+      <h1 class="col-sm-12">
+        Antragserstellung
+      </h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="{{data.btclass}}" *ngFor="let data of mainComponentBuildData; let i = index">
+      <div *ngIf="mainComponentBuildData[i].fieldtype === 'dropdown'">
+        <mat-form-field [ngClass]="{'has-error': formErrors[[data.formControlName]]}"
+                        class="col-sm-12">
+          <mat-label>{{data.placeholder}}</mat-label>
+          <mat-select (openedChange)="logValidationErrors()" [formControlName]=data.formControlName>
+            <mat-option disabled="{{options.disabled}}"
+                        *ngFor="let options of mainComponentBuildData[i].values"
+                        [value]=options.value>
+              {{options.viewValue}}
+            </mat-option>
+          </mat-select>
+          <mat-error mat-class="help-block" *ngIf="formErrors[[data.formControlName]]">
+            {{formErrors[[data.formControlName]]}}
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <div *ngIf="mainComponentBuildData[i].fieldtype === 'textfield'">
+        <mat-form-field [ngClass]="{'has-error': formErrors[[data.formControlName]]}"
+                        class="col-sm-12">
+          <mat-label>{{data.placeholder}}</mat-label>
+          <input (blur)="logValidationErrors()" [formControlName]=data.formControlName matInput
+                 placeholder={{data.placeholder}}>
+          <mat-error mat-class="help-block" *ngIf="formErrors[[data.formControlName]]">
+            {{formErrors[[data.formControlName]]}}
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <div *ngIf="mainComponentBuildData[i].fieldtype === 'textarea'">
+        <mat-form-field [ngClass]="{'has-error': formErrors[[data.formControlName]]}" class="col-sm-12">
+          <mat-label>{{data.placeholder}}</mat-label>
+          <textarea (blur)="logValidationErrors()" [formControlName]=data.formControlName matInput
+                    placeholder={{data.placeholder}}></textarea>
+          <mat-error mat-class="help-block" *ngIf="formErrors[[data.formControlName]]">
+            {{formErrors[[data.formControlName]]}}
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <!--<div *ngIf="mainComponentBuildData[i].fieldtype === 'checkbox'">
+        <mat-checkbox (change)="logValidationErrors()"
+                      [formControlName]=data.formControlName
+                      [disabled]="data.disabled"
+                      class="col-sm-12">{{data.viewValue}}
+        </mat-checkbox>
+      </div>
+      <div *ngIf="mainComponentBuildData[i].fieldtype === 'radiobutton'">
+        <mat-radio-group class="col-sm-12" aria-label="Select an option">
+          <div *ngFor="let options of mainComponentBuildData[i].values">
+            <mat-radio-button (change)="logValidationErrors()"
+                              [formControlName]=data.formControlName
+                              value="options.value">{{options.viewValue}}
+            </mat-radio-button>
+          </div>
+        </mat-radio-group>
+      </div>-->
+    </div>
+  </div>
+
+  <div class="row" *ngIf="avaStatus && this.enableStatusschaltung">
+    <div class="row">
+      <div class="col-sm-2">
+        <h1 class="col-sm-12">
+          Mögliche Status:
+        </h1>
+      </div>
+      <div class="col-sm-2" *ngFor="let status of avaStatus">
+        <button class="col-sm-12" (click)="antragForm.controls.projektstatus.patchValue(status.value); avaStatus = null"
+                mat-raised-button
+                color="primary">{{status.viewValue}}
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="row" *ngIf="!avaStatus">
+    <div class="col-sm-2">
+      <button class="col-sm-12" (click)="sendAntraeg()" [disabled]="this.antragForm.invalid" mat-raised-button
+              color="primary">Absenden
+      </button>
+    </div>
+    <div class="col-sm-2">
+      <button class="col-sm-12" [routerLink]="'/home'" mat-raised-button>Abbrechen</button>
+    </div>
+  </div>
+
+</div>

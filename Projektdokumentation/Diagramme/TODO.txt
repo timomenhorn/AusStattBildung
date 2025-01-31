@@ -1,0 +1,1 @@
+Klassendiagramme für benötigte Daten zum Generieren und den Eingabefeldern

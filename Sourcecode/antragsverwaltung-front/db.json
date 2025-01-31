@@ -1,0 +1,290 @@
+{
+  "antraege": [
+    {
+      "projektart": "extern",
+      "system": "integral",
+      "projekttitel": "ZAm",
+      "beantrager": "menhorti",
+      "beschreibung": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita k",
+      "auftraggeberFirma": "kunde5",
+      "projektstatus": 3,
+      "projektleiter": "Frau Müller",
+      "projektmitarbeiter": "Herr Meier",
+      "angebotsnummer": "22222",
+      "bemi": "33333",
+      "kundenfreigabe": 0,
+      "kommentarFreigabe": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita k",
+      "id": 24,
+      "projektdauer": 22
+    },
+    {
+      "projektart": "intern",
+      "system": "allgemein",
+      "projekttitel": "ZAu",
+      "beantrager": "menhorti",
+      "beschreibung": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita k",
+      "auftraggeberFirma": "kunde2",
+      "projektstatus": 2,
+      "projektleiter": "Frau Müller",
+      "projektmitarbeiter": "Herr Müller",
+      "angebotsnummer": "22222",
+      "bemi": "43211",
+      "kundenfreigabe": 0,
+      "kommentarFreigabe": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita k",
+      "id": 25,
+      "projektdauer": 22
+    },
+    {
+      "projektart": "intern",
+      "system": "his",
+      "projekttitel": "ZEx",
+      "beantrager": "menhorti",
+      "beschreibung": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita k",
+      "auftraggeberFirma": "kunde2",
+      "projektstatus": 1,
+      "projektleiter": "Herr Müller",
+      "projektmitarbeiter": "Frau Müller",
+      "angebotsnummer": "54321",
+      "bemi": "12345",
+      "kundenfreigabe": 1,
+      "kommentarFreigabe": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita k",
+      "id": 26,
+      "projektdauer": 22
+    },
+    {
+      "projektart": "intern",
+      "system": "allgemein",
+      "projekttitel": "123",
+      "beantrager": "menhorti",
+      "beschreibung": "Beschreibungen sind cool",
+      "auftraggeberFirma": "kunde2",
+      "projektstatus": 3,
+      "projektleiter": "Frau Müller",
+      "projektmitarbeiter": "Frau Müller",
+      "angebotsnummer": "22222",
+      "bemi": "33333",
+      "kundenfreigabe": 1,
+      "kommentarFreigabe": "Beschreibungen sind cool",
+      "id": 27,
+      "projektdauer": 22
+    },
+    {
+      "projektart": "intern",
+      "system": "access",
+      "projekttitel": "menhorti",
+      "beantrager": "menhorti",
+      "projektdauer": "2",
+      "beschreibung": "asdadasadsadadsasdasd",
+      "auftraggeberFirma": "kunde6",
+      "projektstatus": 0,
+      "projektleiter": "menhortiaa",
+      "bereichsleiter": "test5",
+      "projektmitarbeiter": "22222aaaaa",
+      "angebotsnummer": "502323",
+      "bemi": "232323",
+      "kundenfreigabe": "0",
+      "kommentarFreigabe": "",
+      "id": 28
+    },
+    {
+      "projektart": "intern",
+      "system": "access",
+      "projekttitel": "ZAMMA",
+      "beantrager": "test1",
+      "projektdauer": "3",
+      "beschreibung": "Hallihalloasdadadasda",
+      "auftraggeberFirma": "kunde2",
+      "projektstatus": 0,
+      "projektleiter": "asdasadaadsasd",
+      "bereichsleiter": "test5",
+      "projektmitarbeiter": "asdasdasdada",
+      "angebotsnummer": "222222",
+      "bemi": "222222",
+      "kundenfreigabe": "1",
+      "kommentarFreigabe": "",
+      "id": 29
+    },
+    {
+      "projektart": "intern",
+      "system": "marketing",
+      "projekttitel": "EEEEE",
+      "beantrager": "test1",
+      "projektdauer": "199",
+      "beschreibung": "HIER STEHT EINE TOLLE ",
+      "auftraggeberFirma": "kunde2",
+      "projektstatus": 1,
+      "projektleiter": "JAAAAAAAAA",
+      "bereichsleiter": "test5",
+      "projektmitarbeiter": "adasdasaadsa",
+      "angebotsnummer": "222222",
+      "bemi": "222222",
+      "kundenfreigabe": "0",
+      "kommentarFreigabe": "adasdasdaaaaaaaaaaaa",
+      "id": 30
+    },
+    {
+      "projektart": "intern",
+      "system": "access",
+      "projekttitel": "OOO",
+      "beantrager": "test1",
+      "projektdauer": "300",
+      "beschreibung": "OOOOOOOOOOOOOOOOOOOOOOO",
+      "auftraggeberFirma": "kunde2",
+      "projektstatus": 1,
+      "projektleiter": "Johannes Münzner",
+      "bereichsleiter": "test5",
+      "projektmitarbeiter": "Q8 qu.  I-HEV3.0  V6250/DU6A8",
+      "angebotsnummer": "30000",
+      "bemi": "40000",
+      "kundenfreigabe": "0",
+      "kommentarFreigabe": "Hallihallooooooooooo",
+      "id": 31
+    },
+    {
+      "projektart": "intern",
+      "system": "integral",
+      "projekttitel": "218WH2P310",
+      "beantrager": "menhorti",
+      "projektdauer": "1234",
+      "beschreibung": "Beurtielung des Plans",
+      "auftraggeberFirma": "kunde2",
+      "projektstatus": 0,
+      "projektleiter": "menhortiiii",
+      "bereichsleiter": "test5",
+      "projektmitarbeiter": "Müller Herrbert",
+      "angebotsnummer": "435334",
+      "bemi": "343453",
+      "kundenfreigabe": "1",
+      "kommentarFreigabe": "",
+      "id": 32
+    }
+  ],
+  "user": [
+    {
+      "username": "menhorti",
+      "password": "7c97253d54d440435b2f86497377af4d",
+      "role": "admin",
+      "id": 1
+    },
+    {
+      "username": "test1",
+      "password": "5a105e8b9d40e1329780d62ea2265d8a",
+      "role": "mitarbeiter",
+      "id": 2
+    },
+    {
+      "username": "test2",
+      "password": "a41c00b4e7f43276d63c570e69ca45c4",
+      "role": "bereichsleiter",
+      "id": 3
+    },
+    {
+      "username": "test3",
+      "password": "8ad8757baa8564dc136c1e07507f4a98",
+      "role": "leitung",
+      "id": 4
+    },
+    {
+      "username": "test4",
+      "password": "86985e105f79b95d6bc918fb45ec7727",
+      "role": "erwleitung",
+      "id": 5
+    }
+  ],
+  "status": [
+    {
+      "currentStatus": 0,
+      "nextStatus": [
+        {
+          "value": 1,
+          "viewValue": "Wartet auf Beauftragung"
+        },
+        {
+          "value": 5,
+          "viewValue": "Zurückgestellt"
+        }
+      ]
+    },
+    {
+      "currentStatus": 1,
+      "nextStatus": [
+        {
+          "value": 2,
+          "viewValue": "In Bearbeitung"
+        },
+        {
+          "value": 5,
+          "viewValue": "Zurückgestellt"
+        }
+      ]
+    },
+    {
+      "currentStatus": 2,
+      "nextStatus": [
+        {
+          "value": 3,
+          "viewValue": "In Abnahme"
+        },
+        {
+          "value": 5,
+          "viewValue": "Zurückgestellt"
+        }
+      ]
+    },
+    {
+      "currentStatus": 3,
+      "nextStatus": [
+        {
+          "value": 4,
+          "viewValue": "Abgeschlossen"
+        },
+        {
+          "value": 5,
+          "viewValue": "Zurückgestellt"
+        }
+      ]
+    },
+    {
+      "currentStatus": 4,
+      "nextStatus": [
+        {
+          "value": 5,
+          "viewValue": "Zurückgestellt"
+        }
+      ]
+    }
+  ],
+  "statusRoleAccess": [
+    {
+      "userRoleEdit": [],
+      "userRoleAccept": [
+        "bereichsleiter"
+      ],
+      "minhours": 0,
+      "maxhours": 19,
+      "klassifizierung": 1
+    },
+    {
+      "userRoleEdit": [
+        "bereichsleiter"
+      ],
+      "userRoleAccept": [
+        "leitung"
+      ],
+      "minhours": 20,
+      "maxhours": 199,
+      "klassifizierung": 2
+    },
+    {
+      "userRoleEdit": [
+        "bereichsleiter"
+      ],
+      "userRoleAccept": [
+        "erwleitung"
+      ],
+      "minhours": 200,
+      "maxhours": null,
+      "klassifizierung": 3
+    }
+  ]
+}

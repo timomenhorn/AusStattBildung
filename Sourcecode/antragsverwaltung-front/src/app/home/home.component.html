@@ -1,0 +1,76 @@
+<div>
+  <div class="row" *ngFor="let item of mainComponentBuildData">
+    <div class="row" *ngIf="showCard(item.access)">
+      <div class="col-sm-2">
+      </div>
+      <div class="col-sm-8">
+        <div class="matCard" (click)="this.loadSubComponents(item)">
+          <mat-card>
+            <div *ngIf="item.matCardHeader">
+              <mat-card-title>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                      <path [attr.d]="item.matCardSVG" stroke="currentColor" stroke-width="1" fill="none"
+                            fill-rule="evenodd"/>
+                    </svg>
+                  </div>
+                  <div class="col-sm-6" style="text-align: center">
+                    {{item.matCardHeader.matCardTitle}}
+                  </div>
+                </div>
+              </mat-card-title>
+              <mat-card-subtitle style="text-align: center">{{item.matCardHeader.matCardSubtitle}}</mat-card-subtitle>
+            </div>
+            <mat-card-content>
+              <div style="text-align: center">
+                {{item.matCardContent}}
+              </div>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+      <div class="col-sm-2">
+      </div>
+    </div>
+  </div>
+  <hr *ngIf="subComponentBuildData">
+  <div class="paddingBottom" *ngIf="subComponentBuildData">
+    <div *ngFor="let item of this.subComponentBuildData" class="row">
+      <div class="col-sm-2">
+      </div>
+      <div class="col-sm-8">
+        <div (click)="loadRoute(item)" class="matCardOptions">
+          <mat-card>
+            <div>
+              <mat-card-title>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                      <path [attr.d]="item.SVG" stroke="currentColor" stroke-width="1" fill="none" fill-rule="evenodd"/>
+                    </svg>
+                  </div>
+                  <div class="col-sm-6" style="text-align: center">
+                    {{item.viewValue}}
+                  </div>
+                  <div class="col-sm-3" style="text-align: right">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                      <path [attr.d]="item.detailSymbol" stroke="currentColor" stroke-width="1" fill="none"
+                            fill-rule="evenodd"/>
+                    </svg>
+                  </div>
+                </div>
+              </mat-card-title>
+            </div>
+          </mat-card>
+        </div>
+      </div>
+      <div class="col-sm-2">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
